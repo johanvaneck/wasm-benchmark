@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<title>hello-wasm example</title>
+	<script type="module" src="index.js"></script>
+</head>
+
+<body>
+	<h1>JS function vs Wasm function benchmark</h1>
+	<h3>Both implementions use a recursing fibonacci function.</h3>
+	<label for="fibN">Fibonacci N: </label>
+	<input id="fibN" name="fibN" type="text" value="45">
+	<button id="testJS">Test JS</button>
+	<button id="testWasm">Test Wasm</button>
+
+	<h5>JS function:</h5>
+	<div id="js"></div>
+	<br>
+
+	<h5>Wasm function:</h5>
+	<div id="wasm"></div>
+	<br>
+</body>
+
+</html>
